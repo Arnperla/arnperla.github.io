@@ -1,0 +1,95 @@
+/* used to input picture for background and color incase of issue with picture*/
+body{
+    background-image: url('images/planets.jpg');
+    background-color: rgb(221, 214, 204);
+}
+/*used to stylize start and stop buttons */
+.button {
+    background-color: rgba(138, 40, 250, 0.15);
+    width: 100px;
+    height: 30px;
+    border-radius: 12px;
+    border-color: rgb(27, 15, 2);
+    color: #c5a3f8;
+}
+
+/* used to stylize table*/
+.table2{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(140, 0, 255, 0.15);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: thin;
+    
+}
+/* used to change color for words within table */
+.tablecolor{
+    
+    color: #ffffff;
+}
+
+
+
+/*used to change color and font for page heading */
+.tableTop{
+    font-weight: bold;
+    color:  #c5a3f8;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* used to change color and font for table row titles*/
+.theading{
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav {
+    background-color: #000000;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    }
+    
+nav ul li {
+    display:inline-block;
+    background-color: #000000;
+    }
+nav a {
+    display:block;
+    padding:0 10px;	
+    color:#FFF;
+    font-size:20px;
+    line-height: 60px;
+    text-decoration:none;
+}
+nav a:hover { 
+    background-color:rgba(217, 199, 238, 0.15); 
+    color: #fff;
+}
+
+/* Fisrt level Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+    /* Hide Dropdowns by Default */
+    nav ul ul {
+    	display: none;
+    	position: absolute; 
+    	top: 60px; /* the height of the main nav */
+    }
+    	
+    /* Display Dropdowns on Hover */
+    nav ul li:hover > ul {
+    	display:inherit;
+    }
+
